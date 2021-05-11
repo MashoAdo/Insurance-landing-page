@@ -11,9 +11,8 @@
 
   <!-- FONTS FROM GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@300;400;700&display=swap"
     rel="stylesheet">
-
   <!-- IONICONS -->
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -28,16 +27,27 @@
   <head>
 
     <nav>
-      <article class="nav-header">
+      <div class="nav-header">
         <img class="logo" src="/images/logo.svg" alt="logo" svg width="100px" height="14px" viewBox="0 0 54 54"
           version="1.1">
 
         <div class="menu-btn">
-          <ion-icon name="menu-outline"></ion-icon>
+          <ion-icon class="show-menu" name="menu-outline"></ion-icon>
         </div>
 
-      </article>
-      <ul>
+      </div>
+
+      <ul class="menu">
+
+        <div class="nav-header">
+          <img class="logo" src="/images/logo.svg" alt="logo" svg width="100px" height="14px" viewBox="0 0 54 54"
+            version="1.1">
+
+          <div class="menu-btn">
+            <ion-icon class="close-menu" name="close-outline"></ion-icon>
+          </div>
+
+        </div>
         <div class="menu-items">
           <li><a href="#">How we work</a></li>
           <li><a href="#">Blog</a></li>
@@ -47,67 +57,123 @@
       </ul>
     </nav>
 
-    <article>
+    <div class="home-img">
       <img src="/images/image-intro-mobile.jpg" alt="family-img">
-    </article>
+    </div>
 
-    <article>
-      <h1>Humanizing your insurance.</h1>
-      <p> Get your life insurance coverage easier and faster. We blend our expertise
-        and technology to help you find the plan that’s right for you. Ensure you
-        and your loved ones are protected.
+    <div class="home-content">
+      <h1>Humanizing <span>your insurance.</span></h1>
+      <p> Get your life insurance coverage easier and <br> faster. We blend our expertise
+        and <br> technology to help you find the plan that’s <br> right for you. Ensure you
+        and your loved <br> ones are protected.
       </p>
       <button>View plans</button>
-    </article>
+    </div>
   </head>
 
-  We’re different
+  <section class="section1">
+    <h1>We’re different</h1>
 
-  Snappy Process
+    <div class="section1-content">
 
-  Our application process can be completed in minutes, not hours. Don’t get
-  stuck filling in tedious forms.
+      <div class="section1-item">
+        <div>
+          <img src="/images/icon-snappy-process.svg" alt="Snappy-svg">
+        </div>
+        <h3>Snappy Process</h3>
+        <p>Our application process can be completed in minutes, not hours. Don’t get
+          stuck filling in tedious forms.
+        </p>
+      </div>
 
-  Affordable Prices
+      <div class="section1-item">
+        <div><img src="/images/icon-affordable-prices.svg" alt="Affordable-svg"></div>
+        <h3>Affordable Prices</h3>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+          but we still offer the best coverage possible.
+        </p>
+      </div>
 
-  We don’t want you worrying about high monthly costs. Our prices may be low,
-  but we still offer the best coverage possible.
+      <div class="section1-item">
+        <div>
+          <img src="/images/icon-people-first.svg" alt="people-first-svg">
+        </div>
+        <h3> People First</h3>
+        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+          sure you’re covered when you need it.
+        </p>
 
-  People First
+      </div>
+    </div>
+  </section>
 
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make
-  sure you’re covered when you need it.
+  <section class="section2">
 
-  Find out more about how we work
+    <h2>
+      Find out more <span>about how we</span> work
+    </h2>
 
-  How we work
+    <button> How we work</button>
 
-  Our company
+  </section>
 
-  How we work
-  Why Insure?
-  View plans
-  Reviews
+  <section class="socials-section">
+    <!-- <img src="/images/bg-pattern-footer-mobile.svg" alt="socials-svg"> -->
+    <div class="socials-content">
+      <div>
+        <img src="/images/logo.svg" alt="logo">
+      </div>
 
-  Help me
+      <div class="socials">
+        <ion-icon name="logo-facebook"><a href="#"></a></ion-icon>
+        <ion-icon name="logo-twitter"><a href="#"></a></ion-icon>
+        <ion-icon name="logo-pinterest"><a href="#"></a></ion-icon>
+        <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
+      </div>
+    </div>
+  </section>
 
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
+  <footer>
+    <div class="footer-item">
+      <p>Our company</p>
 
-  Contact
+      <ul>
+        <li> How we work</li>
+        <li> Why Insure?</li>
+        <li> View plans</li>
+        <li> Reviews</li>
+      </ul>
 
-  Sales
-  Support
-  Live chat
+    </div>
 
-  Others
+    <div class="footer-item">
+      <p> Help me</p>
+      <ul>
+        <li> FAQ</li>
+        <li> Terms of use</li>
+        <li> Privacy policy</li>
+        <li>Cookies</li>
+      </ul>
+    </div>
 
-  Careers
-  Press
-  Licenses
+    <div class="footer-item">
+      <p> Contact</p>
+      <ul>
+        <li> Sales</li>
+        <li> Support</li>
+        <li> Live chat</li>
+      </ul>
+    </div>
 
+    <div class="footer-item">
+      <p> Others</p>
+      <ul>
+        <li>Careers</li>
+        <li>Press</li>
+        <li>Licenses</li>
+      </ul>
+    </div>
+  </footer>
 
 
 </body>
