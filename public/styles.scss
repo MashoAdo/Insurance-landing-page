@@ -1,0 +1,84 @@
+// RESET CSS
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+// REUSABLE CSS
+
+// COLORS
+
+$Very-Light-Gray-p: hsl(0, 0%, 98%);
+$Dark-Grayish-Violet-footer-heading: hsl(273, 4%, 51%);
+$Very-Dark-Violet-menu: hsl(270, 9%, 17%);
+
+$Dark-Violet-body: hsl(256, 26%, 20%);
+$Grayish-Blue-footer-txt: hsl(216, 30%, 68%);
+
+// FONTS
+
+$heading-font: "Karla", sans-serif;
+
+nav {
+	.nav-header {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		height: 3rem;
+		align-items: center;
+		padding: 0 1rem;
+	}
+
+	.menu-btn {
+		font-size: 30px;
+		display: inline-block;
+		ion-icon {
+			margin: 0;
+			border: 1.5px solid black;
+		}
+	}
+}
+.menu-items {
+	border: 1.5px solid black;
+	position: absolute;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
+	background: $Very-Dark-Violet-menu;
+	text-transform: uppercase;
+	li {
+		margin-bottom: 2rem;
+		border: 2px solid $Very-Light-Gray-p;
+		padding: 1rem 2rem;
+		width: 70%;
+		display: flex;
+		justify-content: center;
+	}
+	a {
+		color: $Very-Light-Gray-p;
+		word-spacing: 3px;
+	}
+}
