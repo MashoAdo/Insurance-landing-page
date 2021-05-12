@@ -47,9 +47,33 @@ nav .menu-btn ion-icon {
   border: 1.5px solid black;
 }
 
+.menu-show {
+  right: 0;
+}
+
 .menu {
-  position: absolute;
-  top: -100%;
+  position: relative;
+  right: -100%;
+}
+
+.hide {
+  display: none;
+}
+
+.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-items {
@@ -69,10 +93,11 @@ nav .menu-btn ion-icon {
   padding-top: 2rem;
   background: #2b272f;
   text-transform: uppercase;
-}
-
-.menu-items ul {
-  display: none;
+  height: 600px;
+  background-image: url(/images/bg-pattern-mobile-nav.svg);
+  background-position: center bottom;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
 
 .menu-items li {
@@ -112,8 +137,7 @@ nav .menu-btn ion-icon {
 }
 
 .home-content {
-  position: relative;
-  top: -15px;
+  margin: -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +154,9 @@ nav .menu-btn ion-icon {
   text-align: center;
   padding: 3rem 2rem;
   background: #2d2640;
+  background-image: url(/images/bg-pattern-intro-left-mobile.svg), url(/images/bg-pattern-intro-right-mobile.svg);
+  background-position: left top, right 170%;
+  background-repeat: no-repeat;
   color: #fafafa;
 }
 
@@ -156,9 +183,10 @@ nav .menu-btn ion-icon {
   background: #2d2640;
   border: 2px solid #fafafa;
   color: #fafafa;
-  padding: 1rem 3rem;
+  padding: 0.5rem 2rem;
   cursor: pointer;
   margin: 2rem 0;
+  font-size: 16px;
 }
 
 .home-content button:hover {
@@ -183,12 +211,17 @@ nav .menu-btn ion-icon {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 10rem 1rem 4rem;
+}
+
+.section1 .section1-content {
+  margin: 3rem auto;
 }
 
 .section1 .section1-item {
   padding: auto 4rem;
   max-width: 23rem;
+  margin-top: 3rem;
 }
 
 .section1 h1 {
@@ -223,6 +256,9 @@ nav .menu-btn ion-icon {
   width: 100%;
   height: auto;
   background: #2d2640;
+  background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,9 +305,13 @@ nav .menu-btn ion-icon {
   display: block;
 }
 
-.socials-section .socials-content {
+.socials-section {
   background-image: url(/images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
+}
+
+.socials-section .socials-content {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +325,7 @@ nav .menu-btn ion-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem 3rem;
   position: relative;
 }
 
